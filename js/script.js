@@ -14,4 +14,17 @@ function typeText(text, typingElement, delay) {
   }
 }
 
+function userScroll() {
+  const upButton = document.querySelector('.up-button');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      upButton.classList.remove('invisible');
+    } else {
+      upButton.classList.add('invisible');
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', runTypingEffect);
+document.addEventListener('DOMContentLoaded', userScroll);

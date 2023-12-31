@@ -19,6 +19,9 @@
     <title>Justin Maddox - Portfolio</title>
   </head>
   <body>
+    <a href="#" alt="Go To Top Of Page">
+      <i class="fa-solid fa-circle-up fa-3x invisible up-button"></i>
+    </a>
     <header class="header vh-100 text-center position-relative">
       <div
         class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
@@ -30,16 +33,31 @@
           <span>Front-End Web Developer </span>
         </p>
 
-        <a href="#about" class="btn btn-outline-light btn-lg mt-3">
-          <div class="d-flex">
-            <div class="me-3">
-              <i class="fas fa-chevron-down"></i>
+        <div class="container-landing">
+          <a href="#about" class="btn btn-outline-light btn-lg mt-3">
+            <div class="d-flex">
+              <div class="text-start">
+                <span>About Me</span>
+              </div>
             </div>
-            <div class="text-start">
-              <span>More About Me</span>
+          </a>
+
+          <a href="#portfolio" class="btn btn-outline-light btn-lg mt-3">
+            <div class="d-flex">
+              <div class="text-start">
+                <span>My Projects</span>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+
+          <a href="#contact" class="btn btn-outline-light btn-lg mt-3">
+            <div class="d-flex">
+              <div class="text-start">
+                <span>Contact Me</span>
+              </div>
+            </div>
+          </a>
+        </div>
 
         <div class="social d-flex gap-3 position-absolute">
           <a href="#">
@@ -153,10 +171,10 @@
     </section>
 
     <!-- Portfolio -->
-    <section class="portfolio py-5 bg-light">
+    <section class="portfolio py-5 bg-light" id="portfolio">
       <div class="container">
         <div class="text-center mb-5">
-          <h4 class="text-uppercase fw-bold text-primary">Portfolio</h4>
+          <h4 class="text-uppercase fw-bold text-primary">My Projects</h4>
           <hr class="w-25 mx-auto" />
           <h2 class="mb-4">Check Out My Work</h2>
           <p class="lead">Here is a small sample of my projects.</p>
@@ -425,7 +443,7 @@
             </div>
 
             <!-- Form -->
-            <form name="contact" action="POST" data-netlify="true">
+            <form name="contact" id="contact" action="POST" data-netlify="true">
               <div class="mb-5">
                 <input
                   type="text"

@@ -4,6 +4,16 @@
   background-attachment: fixed;
 }
 
+.up-button {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 0;
+  height: 50px;
+  width: auto;
+  z-index: 11;
+}
+
 .header::after {
   content: '';
   position: absolute;
