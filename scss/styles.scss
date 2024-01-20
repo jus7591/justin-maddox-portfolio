@@ -1,5 +1,6 @@
 .header {
-  background: #151515 url('../images/intro-bg.jpg') no-repeat center center;
+  background: #151515 url('../images/intro-background.jpg') no-repeat center
+    center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -9,8 +10,9 @@
   bottom: 0px;
   right: 0px;
   padding: 0;
-  height: 50px;
+  height: 25px;
   width: auto;
+  border-radius: 10px;
   z-index: 11;
 }
 
